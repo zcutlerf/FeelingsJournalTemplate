@@ -11,6 +11,10 @@
 		5DBE840C2992B76D006C8DA9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBE840B2992B76D006C8DA9 /* ContentView.swift */; };
 		5DBE840E2992B76F006C8DA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DBE840D2992B76F006C8DA9 /* Assets.xcassets */; };
 		5DBE84112992B76F006C8DA9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DBE84102992B76F006C8DA9 /* Preview Assets.xcassets */; };
+		5DBE84182992B7AA006C8DA9 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBE84172992B7AA006C8DA9 /* Entry.swift */; };
+		5DBE841A2992B7D1006C8DA9 /* Feeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBE84192992B7D1006C8DA9 /* Feeling.swift */; };
+		5DBE841C2992B858006C8DA9 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBE841B2992B858006C8DA9 /* ViewModel.swift */; };
+		5DBE84252992FC97006C8DA9 /* EntryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBE84242992FC97006C8DA9 /* EntryDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		5DBE840B2992B76D006C8DA9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5DBE840D2992B76F006C8DA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DBE84102992B76F006C8DA9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5DBE84172992B7AA006C8DA9 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		5DBE84192992B7D1006C8DA9 /* Feeling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feeling.swift; sourceTree = "<group>"; };
+		5DBE841B2992B858006C8DA9 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		5DBE84242992FC97006C8DA9 /* EntryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,9 @@
 			isa = PBXGroup;
 			children = (
 				5DBE84092992B76D006C8DA9 /* FeelingsJournalTemplateApp.swift */,
-				5DBE840B2992B76D006C8DA9 /* ContentView.swift */,
+				5DBE841E2992B880006C8DA9 /* View */,
+				5DBE841D2992B85D006C8DA9 /* ViewModel */,
+				5DBE841F2992B88A006C8DA9 /* Model */,
 				5DBE840D2992B76F006C8DA9 /* Assets.xcassets */,
 				5DBE840F2992B76F006C8DA9 /* Preview Content */,
 			);
@@ -65,6 +75,32 @@
 				5DBE84102992B76F006C8DA9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5DBE841D2992B85D006C8DA9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5DBE841B2992B858006C8DA9 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5DBE841E2992B880006C8DA9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5DBE840B2992B76D006C8DA9 /* ContentView.swift */,
+				5DBE84242992FC97006C8DA9 /* EntryDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5DBE841F2992B88A006C8DA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5DBE84172992B7AA006C8DA9 /* Entry.swift */,
+				5DBE84192992B7D1006C8DA9 /* Feeling.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DBE84252992FC97006C8DA9 /* EntryDetailView.swift in Sources */,
+				5DBE841C2992B858006C8DA9 /* ViewModel.swift in Sources */,
+				5DBE84182992B7AA006C8DA9 /* Entry.swift in Sources */,
 				5DBE840C2992B76D006C8DA9 /* ContentView.swift in Sources */,
+				5DBE841A2992B7D1006C8DA9 /* Feeling.swift in Sources */,
 				5DBE840A2992B76D006C8DA9 /* FeelingsJournalTemplateApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
