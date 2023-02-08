@@ -11,7 +11,7 @@ import SwiftUI
 struct FeelingsJournalTemplateApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AddEntryView()
         }
     }
 }

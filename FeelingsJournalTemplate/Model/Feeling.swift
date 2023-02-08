@@ -8,7 +8,7 @@
 import Foundation
 
 /// An enum that defines the feelings available to our users.
-enum Feeling: String {
+enum Feeling: String, CaseIterable {
     case happy = "Happy"
     case sad = "Sad"
     case angry = "Angry"
