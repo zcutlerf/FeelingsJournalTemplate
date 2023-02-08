@@ -16,10 +16,15 @@ struct ContentView: View {
         NavigationStack {
             List {
                 ForEach(viewModel.entries) { entry in
-                    VStack(alignment: .leading) {
-                        Text("I was \(entry.feeling.rawValue)")
-                            .fontWeight(.semibold)
-                        Text("on \(entry.date.formatted(date: .abbreviated, time: .shortened))")
+                    HStack {
+                        Text(entry.feeling.emoji)
+                            .font(.largeTitle)
+                        
+                        VStack(alignment: .leading) {
+                            Text("I was \(entry.feeling.rawValue)")
+                                .fontWeight(.semibold)
+                            Text("on \(entry.date.formatted(date: .abbreviated, time: .shortened))")
+                        }
                     }
                 }
             }

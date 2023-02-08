@@ -13,4 +13,17 @@ enum Feeling: String, CaseIterable {
     case sad = "Sad"
     case angry = "Angry"
     case itsComplicated = "It's Complicated"
+    
+    var emoji: String {
+        switch self {
+        case .happy:
+            return "😍"
+        case .sad:
+            return "😭"
+        case .angry:
+            return "😡"
+        case .itsComplicated:
+            return "⁉️"
+        }
+    }
 }
