@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isShowingAddEntrySheet = false
+    
     var body: some View {
         NavigationStack {
             List {
@@ -17,13 +19,22 @@ struct ContentView: View {
             .toolbar {
                 feelingsToolbarItem
             }
+            .sheet(isPresented: $isShowingAddEntrySheet) {
+                AddEntryView()
+            }
         }
     }
 }
 
 extension ContentView {
-    var feelingsToolbarItem: some View {
-        Text("I'm feeling...")
+    var feelingsToolbarItem: some ToolbarContent {
+        ToolbarItem {
+            Button {
+                isShowingAddEntrySheet.toggle()
+            } label: {
+                Label("I'm feeling...", systemImage: "plus")
+            }
+        }
     }
 }
 
