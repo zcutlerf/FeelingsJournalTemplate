@@ -14,6 +14,8 @@ class ViewModel: ObservableObject {
     func addEntry(for feeling: Feeling) {
         let newEntry = Entry(date: Date(), feeling: feeling)
         entries.append(newEntry)
+        
+        save()
     }
     
     /// Writes feelings to the app's documents directory.
