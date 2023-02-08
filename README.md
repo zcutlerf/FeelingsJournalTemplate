@@ -11,7 +11,7 @@ Swift Data Modeling
 https://medium.com/@jlwarfield/constructing-a-swift-data-model-for-dummies-5b79fbd22a2a
 
 SwiftUI Picker
-https://medium.com/@jlwarfield/constructing-a-swift-data-model-for-dummies-5b79fbd22a2a
+https://developer.apple.com/documentation/swiftui/picker
 
 SwiftUI Sheet
 https://www.hackingwithswift.com/quick-start/swiftui/how-to-present-a-new-view-using-sheets
