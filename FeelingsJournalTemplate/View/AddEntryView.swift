@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AddEntryView: View {
     @EnvironmentObject var viewModel: ViewModel
+    @Environment(\.dismiss) var dismiss
     
     @State private var selectedFeeling: Feeling = Feeling.happy
     
@@ -24,7 +25,9 @@ struct AddEntryView: View {
             }
             
             Button {
-                //TODO: Add action
+                viewModel.addEntry(for: selectedFeeling)
+                
+                dismiss()
             } label: {
                 Text("Add")
             }
