@@ -12,7 +12,8 @@ class ViewModel: ObservableObject {
     
     /// Safely adds a new entry based on what the user is currently feeling.
     func addEntry(for feeling: Feeling) {
-        
+        let newEntry = Entry(date: Date(), feeling: feeling)
+        entries.append(newEntry)
     }
     
     /// Writes feelings to the app's documents directory.
