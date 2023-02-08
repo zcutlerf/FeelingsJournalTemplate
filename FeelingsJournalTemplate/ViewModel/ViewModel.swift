@@ -18,7 +18,18 @@ class ViewModel: ObservableObject {
     
     /// Writes feelings to the app's documents directory.
     func save() {
-        
+        do {
+            let url = try archiveURL()
+            print("Saving entries to \(url)")
+            
+            let encoder = PropertyListEncoder()
+            
+            let data = try encoder.encode(entries)
+            try data.write(to: url)
+            print("Saved all of the entries")
+        } catch let encodingError {
+            print("Could not save any of the entries: \(encodingError)")
+        }
     }
     
     /// Gets the URL for the app's documents directory.
