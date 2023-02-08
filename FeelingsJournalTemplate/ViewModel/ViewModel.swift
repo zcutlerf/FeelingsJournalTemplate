@@ -10,6 +10,10 @@ import SwiftUI
 class ViewModel: ObservableObject {
     @Published var entries: [Entry] = []
     
+    init() {
+        load()
+    }
+    
     /// Safely adds a new entry based on what the user is currently feeling.
     func addEntry(for feeling: Feeling) {
         let newEntry = Entry(date: Date(), feeling: feeling)
@@ -46,7 +50,18 @@ class ViewModel: ObservableObject {
     
     /// Loads the saved entries from the app's documents directory.
     func load() {
-        
+        do {
+            let url = try archiveURL()
+            print("Loading entries from \(url)")
+            let data = try Data(contentsOf: url)
+            let unarchiver = PropertyListDecoder()
+            let loadedEntries = try unarchiver.decode([Entry].self, from: data)
+            entries = loadedEntries
+        } catch CocoaError.fileReadNoSuchFile {
+            //ignore error
+        } catch let decodingError {
+            print("Could not read saved entries: \(decodingError)")
+        }
     }
     
     func update(_ entry: Entry) {
