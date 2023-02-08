@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct FeelingsJournalTemplateApp: App {
+    @StateObject var viewModel = ViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            AddEntryView()
+            ContentView()
+                .environmentObject(viewModel)
         }
     }
 }

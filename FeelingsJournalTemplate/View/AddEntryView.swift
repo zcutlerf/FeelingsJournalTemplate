@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct AddEntryView: View {
+    @EnvironmentObject var viewModel: ViewModel
+    
     @State private var selectedFeeling: Feeling = Feeling.happy
     
     var body: some View {
@@ -36,6 +38,7 @@ struct AddEntryView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
             AddEntryView()
+                .environmentObject(ViewModel())
         }
     }
 }
