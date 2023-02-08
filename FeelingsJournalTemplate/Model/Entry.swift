@@ -8,8 +8,8 @@
 import Foundation
 
 /// The model for one particular Entry (or moment) that the user was feeling.
-struct Entry: Identifiable {
-    let id = UUID()
+struct Entry: Identifiable, Codable {
+    var id = UUID()
     var date: Date
     var feeling: Feeling
 }
