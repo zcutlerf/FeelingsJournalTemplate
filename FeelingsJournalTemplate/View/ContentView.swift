@@ -15,7 +15,13 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             List {
-                Text("List users' Entries here.")
+                ForEach(viewModel.entries) { entry in
+                    VStack(alignment: .leading) {
+                        Text("I was \(entry.feeling.rawValue)")
+                            .fontWeight(.semibold)
+                        Text("on \(entry.date.formatted(date: .abbreviated, time: .shortened))")
+                    }
+                }
             }
             .navigationTitle("Journal")
             .toolbar {
