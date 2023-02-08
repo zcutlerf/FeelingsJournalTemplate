@@ -46,6 +46,7 @@
 		5DBE83FD2992B76D006C8DA9 = {
 			isa = PBXGroup;
 			children = (
+				5DC898E929940AF10076544C /* README.md */,
 				5DBE84082992B76D006C8DA9 /* FeelingsJournalTemplate */,
 				5DBE84072992B76D006C8DA9 /* Products */,
 			);
@@ -62,7 +63,6 @@
 		5DBE84082992B76D006C8DA9 /* FeelingsJournalTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				5DC898E929940AF10076544C /* README.md */,
 				5DBE84092992B76D006C8DA9 /* FeelingsJournalTemplateApp.swift */,
 				5DBE841E2992B880006C8DA9 /* View */,
 				5DBE841D2992B85D006C8DA9 /* ViewModel */,
