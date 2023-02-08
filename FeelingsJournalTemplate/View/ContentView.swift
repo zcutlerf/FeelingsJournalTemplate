@@ -15,14 +15,14 @@ struct ContentView: View {
             }
             .navigationTitle("Journal")
             .toolbar {
-                feelingsMenu
+                feelingsToolbarItem
             }
         }
     }
 }
 
 extension ContentView {
-    var feelingsMenu: some View {
+    var feelingsToolbarItem: some View {
         Text("I'm feeling...")
     }
 }

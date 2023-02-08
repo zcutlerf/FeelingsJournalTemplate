@@ -15,6 +15,7 @@
 		5DBE841A2992B7D1006C8DA9 /* Feeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBE84192992B7D1006C8DA9 /* Feeling.swift */; };
 		5DBE841C2992B858006C8DA9 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBE841B2992B858006C8DA9 /* ViewModel.swift */; };
 		5DBE84252992FC97006C8DA9 /* EntryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBE84242992FC97006C8DA9 /* EntryDetailView.swift */; };
+		5DBE84272993DB54006C8DA9 /* AddEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBE84262993DB54006C8DA9 /* AddEntryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		5DBE84192992B7D1006C8DA9 /* Feeling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feeling.swift; sourceTree = "<group>"; };
 		5DBE841B2992B858006C8DA9 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		5DBE84242992FC97006C8DA9 /* EntryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailView.swift; sourceTree = "<group>"; };
+		5DBE84262993DB54006C8DA9 /* AddEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				5DBE840B2992B76D006C8DA9 /* ContentView.swift */,
+				5DBE84262993DB54006C8DA9 /* AddEntryView.swift */,
 				5DBE84242992FC97006C8DA9 /* EntryDetailView.swift */,
 			);
 			path = View;
@@ -175,6 +178,7 @@
 			files = (
 				5DBE84252992FC97006C8DA9 /* EntryDetailView.swift in Sources */,
 				5DBE841C2992B858006C8DA9 /* ViewModel.swift in Sources */,
+				5DBE84272993DB54006C8DA9 /* AddEntryView.swift in Sources */,
 				5DBE84182992B7AA006C8DA9 /* Entry.swift in Sources */,
 				5DBE840C2992B76D006C8DA9 /* ContentView.swift in Sources */,
 				5DBE841A2992B7D1006C8DA9 /* Feeling.swift in Sources */,
