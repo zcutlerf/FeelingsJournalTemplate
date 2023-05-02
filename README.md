@@ -101,6 +101,7 @@ Solution:
 Step 1: Save Entries
 * Conform Entry and Feeling to the Codable protocol.
 * Save entries to the app's documents directory:
+```Swift
 do {
  let url = try archiveURL()
  print("Saving entries to \(url)")
@@ -113,6 +114,7 @@ do {
 } catch let encodingError {
  print("Could not save any of the entries: \(encodingError)")
 }
+```
 * In our addEntry function, call the save() function to save.
 Solution: Checkout the saveEntries branch.
 
